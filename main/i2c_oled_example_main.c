@@ -16,14 +16,10 @@
 
 #include "LCD_init.h"
 #include "LVGL_init_my.h"
+#include "lvgl_demo_ui.h"
+
 
 static const char *TAG = "example";
-
-
-
-
-extern void example_lvgl_demo_ui(lv_disp_t *disp);
-
 
 
 

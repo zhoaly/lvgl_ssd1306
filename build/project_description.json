@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "lvgl_ssd1306",
-    "project_version":    "1",
+    "project_version":    "9e90726-dirty",
     "project_path":       "/home/zhaoly/lvgl_ssd1306",
     "idf_path":           "/home/zhaoly/esp/v5.4/esp-idf",
     "build_dir":          "/home/zhaoly/lvgl_ssd1306/build",
@@ -70,7 +70,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/zhaoly/lvgl_ssd1306/build/esp-idf/LVGL_MY/libLVGL_MY.a",
-            "sources": [ "/home/zhaoly/lvgl_ssd1306/components/LVGL_MY/LVGL_init_my.h", "/home/zhaoly/lvgl_ssd1306/components/LVGL_MY/LVGL_init_my.c" ],
+            "sources": [ "/home/zhaoly/lvgl_ssd1306/components/LVGL_MY/LVGL_init_my.h", "/home/zhaoly/lvgl_ssd1306/components/LVGL_MY/LVGL_init_my.c", "/home/zhaoly/lvgl_ssd1306/components/LVGL_MY/lvgl_demo_ui.c", "/home/zhaoly/lvgl_ssd1306/components/LVGL_MY/lvgl_demo_ui.h" ],
             "include_dirs": [ "." ]
         },
         "app_trace": {
@@ -1300,7 +1300,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [ "espressif__esp_lcd_sh1107", "espressif__esp_lvgl_port", "lvgl__lvgl" ],
             "file": "/home/zhaoly/lvgl_ssd1306/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/zhaoly/lvgl_ssd1306/main/i2c_oled_example_main.c", "/home/zhaoly/lvgl_ssd1306/main/lvgl_demo_ui.c" ],
+            "sources": [ "/home/zhaoly/lvgl_ssd1306/main/i2c_oled_example_main.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
