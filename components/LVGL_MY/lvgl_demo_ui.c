@@ -2,6 +2,7 @@
 
 void example_lvgl_demo_ui(lv_disp_t *disp)
 {
+
     lv_obj_t *scr = lv_disp_get_scr_act(disp);
 
     /*------------------------------------------------------------------------------
@@ -25,8 +26,8 @@ void example_lvgl_demo_ui(lv_disp_t *disp)
     // 设置边框宽度为1像素，并指定边框颜色
     lv_style_set_border_width(&style_panel, 1);
     lv_style_set_border_color(&style_panel, lv_color_black());
-    lv_style_set_radius(&style_panel,5); //设置n圆角
-    lv_style_set_pad_column(&style_panel,10);//设置间距
+    lv_style_set_radius(&style_panel,3); //设置n圆角
+    lv_style_set_pad_column(&style_panel,5);//设置间距
 
     // 将样式应用到面板上
     lv_obj_add_style(panel, &style_panel, 0);
@@ -63,5 +64,5 @@ void example_lvgl_demo_ui(lv_disp_t *disp)
         lv_label_set_text_fmt(label, "Page %ld", i + 1);
         // 使标签在按钮中居中显示
         lv_obj_center(label);
-}
+    }
 }
