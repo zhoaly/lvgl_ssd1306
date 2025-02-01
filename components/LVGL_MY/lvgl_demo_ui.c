@@ -25,7 +25,7 @@ void example_lvgl_demo_ui(lv_disp_t *disp)
     // 设置边框宽度为1像素，并指定边框颜色
     lv_style_set_border_width(&style_panel, 1);
     lv_style_set_border_color(&style_panel, lv_color_black());
-    lv_style_set_radius(&style_panel,5); //设置圆角
+    lv_style_set_radius(&style_panel,5); //设置n圆角
     lv_style_set_pad_column(&style_panel,10);//设置间距
 
     // 将样式应用到面板上

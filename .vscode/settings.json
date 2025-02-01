@@ -14,6 +14,7 @@
         "esp_lvgl_port.h": "c",
         "esp_lcd_panel_vendor.h": "c",
         "esp_err.h": "c",
-        "lvgl.h": "c"
+        "lvgl.h": "c",
+        "uart_init_my.h": "c"
     }
 }
