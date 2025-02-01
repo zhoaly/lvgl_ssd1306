@@ -11,7 +11,6 @@
 #include "esp_log.h"
 #include "esp_lvgl_port.h"
 #include "lvgl.h"
-
 #include "esp_lcd_panel_vendor.h"
 
 
@@ -24,7 +23,7 @@ static const char *TAG = "example";
 
 
 extern void example_lvgl_demo_ui(lv_disp_t *disp);
-extern lv_disp_t *disp;
+
 
 
 
@@ -33,7 +32,7 @@ void app_main(void)
 {
     LCD_Init();
 
-    LVGL_Init_my();
+    lv_disp_t* disp=LVGL_Init_my();
 
 
 

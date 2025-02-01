@@ -10,9 +10,9 @@ extern esp_lcd_panel_io_handle_t io_handle;
 
 static const char *TAG = "LVGL_init_my";
 
-lv_disp_t *disp = NULL;
+// lv_disp_t *disp = NULL;
 
-void LVGL_Init_my(){
+lv_disp_t* LVGL_Init_my(){
 
     ESP_LOGI(TAG, "Initialize LVGL");
     const lvgl_port_cfg_t lvgl_cfg = ESP_LVGL_PORT_INIT_CONFIG();
@@ -32,8 +32,10 @@ void LVGL_Init_my(){
             .mirror_y = false,
         }
     };
+    lv_disp_t *disp = NULL;
     disp = lvgl_port_add_disp(&disp_cfg);
 
     /* Rotation of the screen */
     lv_disp_set_rotation(disp, LV_DISP_ROT_180);
+    return disp;
 }
