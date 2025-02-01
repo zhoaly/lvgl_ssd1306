@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "lvgl_ssd1306",
-    "project_version":    "e2cccd9-dirty",
+    "project_version":    "0f4e970-dirty",
     "project_path":       "/home/zhaoly/lvgl_ssd1306",
     "idf_path":           "/home/zhaoly/esp/v5.4/esp-idf",
     "build_dir":          "/home/zhaoly/lvgl_ssd1306/build",

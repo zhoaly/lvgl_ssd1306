@@ -31,18 +31,17 @@ void app_main(void)
     uart_init_my();
     lv_disp_t* disp=LVGL_Init_my();
 
+
+
+
+
     lvgl_port_lock(0);
     example_lvgl_demo_ui(disp);
     lvgl_port_unlock();
 
     while (1)
     {   
-        int length=0;
-        
-        ESP_ERROR_CHECK(uart_get_buffered_data_len(uart_num, (size_t*)&length));//读取缓冲区内长度
-        uart_read_bytes(uart_num, data, length, 100);
-        uart_write_bytes(uart_num, (const char*)data, length);
-        vTaskDelay(pdMS_TO_TICKS(100));
+
     }
     
 }
