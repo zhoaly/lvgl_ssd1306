@@ -90,5 +90,6 @@
 /home/zhaoly/lvgl_ssd1306/build/esp-idf/LCD/libLCD.a
 /home/zhaoly/lvgl_ssd1306/build/esp-idf/LED/libLED.a
 /home/zhaoly/lvgl_ssd1306/build/esp-idf/LVGL_MY/libLVGL_MY.a
+/home/zhaoly/lvgl_ssd1306/build/esp-idf/UART_MY/libUART_MY.a
 /home/zhaoly/lvgl_ssd1306/build/esp-idf/beep/libbeep.a
 /home/zhaoly/lvgl_ssd1306/build/esp-idf/mq2/libmq2.a

@@ -584,6 +584,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/zhaoly/lvgl_ssd1306/build/esp-idf/UART_MY/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/zhaoly/lvgl_ssd1306/build/esp-idf/beep/cmake_install.cmake")
 endif()
 

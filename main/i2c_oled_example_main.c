@@ -17,7 +17,7 @@
 #include "LCD_init.h"
 #include "LVGL_init_my.h"
 #include "lvgl_demo_ui.h"
-
+#include "UART_init_my.h"
 
 static const char *TAG = "example";
 
@@ -28,7 +28,7 @@ static const char *TAG = "example";
 void app_main(void)
 {
     LCD_Init();
-
+    uart_init_my();
     lv_disp_t* disp=LVGL_Init_my();
 
     lvgl_port_lock(0);
@@ -62,7 +62,7 @@ void app_main(void)
 
     while (1)
     {
-        ESP_ERROR_CHECK(uart_get_buffered_data_len(uart_num, (size_t*)&length));
+        ESP_ERROR_CHECK(uart_get_buffered_data_len(uart_num, (size_t*)&length));//读取缓冲区内长度
         uart_read_bytes(uart_num, data, length, 100);
         uart_write_bytes(uart_num, (const char*)data, length);
         vTaskDelay(pdMS_TO_TICKS(100));
