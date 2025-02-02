@@ -39,14 +39,5 @@ void app_main(void)
     example_lvgl_demo_ui(disp);
     lvgl_port_unlock();
 
-
-    uart_report_type  pvBuffer[10]={0};
-    while (1)
-    {
-        xQueueReceive(uart_report_cmd_quere,(void *)&pvBuffer, (TickType_t)portMAX_DELAY);
-        ESP_LOGI(TAG,"reprot is :%c,time is: %ld ",pvBuffer[0].reprot,pvBuffer[0].currenttime-pvBuffer[0].startime);
-    }
-    
-
     
 }

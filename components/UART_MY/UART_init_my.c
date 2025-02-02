@@ -1,6 +1,7 @@
 
 #include "UART_init_my.h"
 #include "esp_log.h"
+#include "lvgl.h"
 
 static const char *TAG = "uart_init_my";
 
@@ -41,9 +42,7 @@ void uart_task(){
                     
                     uart_input_cmd.reprot=data[0];
                     uart_input_cmd.currenttime=xTaskGetTickCount();
-                    xQueueSend(uart_report_cmd_quere,(void *)&uart_input_cmd,(TickType_t)portMAX_DELAY);
-
-
+                    xQueueSend(uart_report_cmd_quere,(void *)&uart_input_cmd,(TickType_t)0);
                     break;
                 }
                 case UART_BUFFER_FULL:{
